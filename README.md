@@ -39,28 +39,20 @@ you wish.
 
 1. WoCoServer:  
 The command line interface of the server looks as follows:  
-
 ```<listenaddress> <listenport> <cleaning> <threadcount>```  
-
 For example, to run a multi-threaded server with four threads and HTML-cleaning
 of the documents, execute the following command in a terminal from the root folder 
 of the repository:  
-
 ```java -jar jars/WoCoServer.jar localhost 3000 1 4```  
-
 Press CTRL+C to kill the server.
 
 2. WoCoClient:  
 Open a new terminal window and ```cd``` into the root directory again. The command line 
 interface of the client looks as follows:  
-
 ```<servername> <serverport> <documentsize(KiB)> <opcount(x1000)> [<seed>] [<number of clients>]```. 
-
 For example, to run an experiment and send 10.000 documents of size 16KiB to our
 previously started server, run:  
-
 ```java -jar jars/WoCoClient.jar localhost 3000 16 10```  
-
 You can observe the throughput of the system in the client terminal window, as well
 as the final response time percentiles over all documents.  
 You can open several terminals and start as many clients as you want at the same time
